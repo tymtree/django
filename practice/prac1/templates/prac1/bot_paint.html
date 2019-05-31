@@ -1,0 +1,504 @@
+{% extends "prac1/base.html" %}
+
+{% block content %}
+
+{% load static %}
+<!-- NAVBAR
+================================================== -->
+<div class="navbar-wrapper">
+    
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top"> 
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/home">BSIArchive</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                
+                
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archives <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Textile Designs</a></li>
+                    <li><a href="#">Natural Dyes</a></li>
+                    <li><a href="/bot_paint">Botanical Illustrations</a></li>
+                    <li><a href="#">Herbarium</a></li>
+                    <li role="separator" class="divider"></li>
+                    <ul>
+                    <li> <a href="/eco-herb">Economic Herbarium</a></li>
+                    <li><a href="/type-herb">Type Herbarium</a></li>
+                    <li><a href="/other-herb">Other Herbarium</a></li>
+                    </ul>
+                  </ul>
+                </li>
+                <!--<li><a href="/about">About</a></li>-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Textile Designs</a></li>
+                    <li><a href="#">Natural Dyes</a></li>
+                    <li><a href="#">Botanical Illustrations</a></li>
+                    <li><a href="#">Herbarium</a></li>
+                  </ul>
+                    </li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/search">Search</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Grid and List View
+    ================================================== -->
+<div class="container content">
+      <h3>Botanical Illustrations</h3>             
+
+    <div class="well well-sm">
+        <strong>Display</strong>
+        <div class="btn-group">
+            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+            </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                class="glyphicon glyphicon-th"></span>Grid</a>
+        </div>
+    </div>
+    <div id="products" class="row list-group">
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Plant Name: 1234</h4>
+                      <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/dyeblock_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit..</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/textiles-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/type2herb.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/typeherb.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/herberium-block.jpg' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Plant Name</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="{% static 'img/painting-block_01.gif' %}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Product title</h4>
+                    <p class="group inner list-group-item-text">
+                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <div class="row">
+                        <!--<div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                $21.000</p>
+                        </div>-->
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <nav aria-label="...">
+    <ul class="pagination">
+      <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+      <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li> <a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+    </nav>
+    </div>
+
+
+<!--</div>-->
+<!-- /.Grid & List View -->
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    
+
+
+      <!-- START THE FEATURETTES -->
+
+      <!--<hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">-->
+
+      <!-- /END THE FEATURETTES -->
+
+{% endblock %}

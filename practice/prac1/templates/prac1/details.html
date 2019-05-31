@@ -1,0 +1,91 @@
+{% extends 'prac1/base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+<!-- NAVBAR
+================================================== -->
+<div class="navbar-wrapper">
+
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/home">BSIArchive</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+
+
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Archives <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Textile Designs</a></li>
+                    <li><a href="#">Natural Dyes</a></li>
+                    <li><a href="/bot_paint">Botanical Illustrations</a></li>
+                    <li><a href="#">Herbarium</a></li>
+                    <li role="separator" class="divider"></li>
+                    <ul>
+                    <li> <a href="/eco-herb">Economic Herbarium</a></li>
+                    <li><a href="/type-herb">Type Herbarium</a></li>
+                    <li><a href="/other-herb">Other Herbarium</a></li>
+                    </ul>
+                  </ul>
+                </li>
+                <!--<li><a href="/about">About</a></li>-->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Textile Designs</a></li>
+                    <li><a href="#">Natural Dyes</a></li>
+                    <li><a href="#">Botanical Illustrations</a></li>
+                    <li><a href="#">Herbarium</a></li>
+                  </ul>
+                    </li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/search">Search</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+</div>
+
+<!-- NAVBAR END=========-->
+
+<div class="container content">
+<div class="row">
+	<div class="col-md-offset-2 col-md-8">
+      <div>
+        <img src="media/{{ plant_data.image.url }}" width="250" height="250">
+      </div>
+      <div>
+<table class="table table-bordered">
+<thead>
+<th>Plant Name</th>
+<th>Date</th>
+<th>Description</th>
+</thead>
+	<!--<td><img src="{{ plant_data.image.url }}" width="100" height="100"></td>-->
+	<td>{{ plant_data.plants_name }}</td>
+	<td>{{ plant_data.pub_date }} </td>
+
+
+
+</table>
+      </div>
+</div>
+</div>
+</div>
+
+{% endblock %}

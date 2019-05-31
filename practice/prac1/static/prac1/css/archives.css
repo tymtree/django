@@ -1,0 +1,191 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE Header
+-------------------------------------------------- */
+
+/* Carousel base class */
+.header_content {
+  height: 100px;
+  max-width: 80%;
+  margin: 0 200px 0 250px;
+  vertical-align: center;
+  
+  /*margin-bottom: 60px;*/
+}
+/* Since positioning the image, we need to help out the caption */
+.header_content .row {
+  height: 80%;
+  max-width: 100%;
+  align-items: center;
+
+}
+
+/* Declare heights because of positioning of img element */
+.header_content .row .item {
+  background-color: #ffff;
+  display: inline;
+}
+.header_content > .item > img {
+  position: inline;
+  top: 0;
+  left: 0;
+  max-height: 70px;
+  /*height: 500px;*/
+}
+
+.header_content > .item  > span, h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.header_content > .item > p {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px;
+  position: inline;
+}
+
+
+/* GRID & LIST CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.content {
+margin-top: 120px;
+
+}
+.content .col-md-2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.content h2 {
+  font-weight: normal;
+}
+.content .col-md-2 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    height: 200px;
+    width: 150px;
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
